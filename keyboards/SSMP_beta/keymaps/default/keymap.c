@@ -68,19 +68,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
-	keyevent_t event = record->event;
-
-	switch (id) {
-		case 0:
-			if (record->event.pressed) {
-				return MACRO( D(H), D(I), U(H), U(I), D(SPC), D(T), U(SPC), D(H), U(T), D(E), U(H), D(R), U(E), D(E), U(R), U(E), END );
-			}
-			break;
-	}
-	return MACRO_NONE;
-}
-
 void matrix_init_user(void) {
 }
 
