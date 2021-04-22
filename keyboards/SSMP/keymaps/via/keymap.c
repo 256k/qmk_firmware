@@ -1,0 +1,27 @@
+#include QMK_KEYBOARD_H
+
+enum layer_names {
+    _BASE,
+	_FN
+};
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
+	[0] = LAYOUT_all(
+		KC_MPRV, KC_MNXT, KC_MPLY, LCTL(LCMD(KC_Q)),
+		KC_VOLD, KC_VOLU, KC_MUTE, MO(_FN)),
+
+	[1] = LAYOUT_all(
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+		KC_TRNS, KC_TRNS, KC_MUTE, KC_TRNS),
+
+	[2] = LAYOUT_all(
+	KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+	KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+	[3] = LAYOUT_all(
+	KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+	KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+};
+

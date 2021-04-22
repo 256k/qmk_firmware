@@ -4,12 +4,12 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x256A
-#define PRODUCT_ID      0x4040
+#define VENDOR_ID       0x256A // 256klabs
+#define PRODUCT_ID      0x4245
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    qmkbuilder
-#define PRODUCT         keyboard
-#define DESCRIPTION     Keyboard
+#define MANUFACTURER    256klabs
+#define PRODUCT         SSMP
+#define DESCRIPTION     Super Simple Macropad
 
 /* key matrix size */
 #define MATRIX_ROWS 2
